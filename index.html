@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Data Binding</title>
+</head>
+<body>
+	<div [class.main-div]="true">
+		<fieldset>
+			<legend>Form View</legend>
+			<table style="raed{{mofeed}}">
+				<tr>
+					<td>First Name :</td>
+					<td>{{firstName}}</td>
+				</tr>
+				<tr>
+					<td>Last Name :</td>
+					<td>{{lastName}}</td>
+				</tr>
+				<tr>
+					<td>Age :</td>
+					<td>{{age}}</td>
+				</tr>
+			</table> 
+		</fieldset>
+		<fieldset>
+			<legend>Form</legend>
+			<form>
+				<table>
+					<tr>
+						<td><label>First Name :</label></td>
+						<td><input type="text" ngmodel="firstName"></td>
+					</tr>
+					<tr>
+						<td><label>last Name :</label></td>
+						<td><input type="text" ngmodel="lastName"></td>
+					</tr>
+					<tr>
+						<td><label>Age :</label></td>
+						<td><input type="number" ngmodel="age"></td>
+					</tr>
+				</table>
+			</form>
+		</fieldset>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
